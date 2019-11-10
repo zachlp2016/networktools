@@ -1,22 +1,13 @@
 require 'rails_helper'
 require 'pry'
 
-RSpec.describe "songs index page", type: :feature do
-  it "can see all songs titles and play count" do
-    song_1 = Song.create(title:       "I Really Like You",
-                         length:      208,
-                         play_count:  243810867)
-    song_2 = Song.create(title:       "Call Me Maybe",
-                         length:      199,
-                         play_count:  1214722172)
+RSpec.describe "home page", type: :feature do
+  it "can see the menu" do
+    visit root_path
 
-    visit "/songs"
+    click_on("Home")
 
-    save_and_open_page
-
-    expect(page).to have_content(Network Tools)
-    expect(page).to have_content("Play Count: #{song_1.play_count}")
-    expect(page).to have_content(song_2.title)
-    expect(page).to have_content("Play Count: #{song_2.play_count}")
+    expect(current_path).to eq(root_path)
+    expect(page).to have_content("Network Tools")
   end
 end
