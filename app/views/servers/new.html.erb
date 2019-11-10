@@ -1,22 +1,22 @@
 <div class="form_box">
-  <%= form_with scope: :server, local: true do |form| %>
+  <%= form_for @server do |f| %>
     <p>
-      <%= form.label :server_name %><br>
-      <%= form.text_field :title %>
+      <%= f.label :server_name %><br>
+      <%= f.text_field :server_name %>
     </p>
 
     <p>
-      <%= form.label :ip_address %><br>
-      <%= form.text_field :text %>
+      <%= f.label :ip_address %><br>
+      <%= f.text_field :ip_address %>
     </p>
 
     <p>
-      <%= form.label :operating_system %><br>
-      <%= form.text_field :text %>
+      <%= f.label :operating_system %><br>
+      <%= f.text_field :operating_system %>
     </p>
 
     <p>
-      <%= form.submit %>
+      <%= f.submit %>
     </p>
   <% end %>
 </div>

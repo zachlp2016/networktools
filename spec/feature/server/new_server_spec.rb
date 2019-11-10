@@ -32,5 +32,17 @@ RSpec.describe "new server", type: :feature do
   end
 
   it "Can Create a new server Once signed in" do
+    visit new_server_path
+
+    fill_in 'server[server_name]', with: "New Server"
+    fill_in 'server[ip_address]', with: "127.0.0.1"
+    fill_in 'server[operating_system]', with: "Debian"
+
+    click_on "Create Server"
+
+    server_count = Server.all.count
+    server_id = Server.last.id
+    expect(server_count).to eq(1)
+    expect(current_path).to eq(server_path(server_id))
   end
 end

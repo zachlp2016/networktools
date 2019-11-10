@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  resources :servers, only: [:index, :show, :new, :post]
+  resources :servers, only: [:index, :show, :new, :create]
 
 
 end
