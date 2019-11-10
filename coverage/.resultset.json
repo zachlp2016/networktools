@@ -853,6 +853,15 @@
         null,
         null
       ],
+      "/mnt/c/projects/networktools/spec/factories.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
       "/mnt/c/projects/networktools/config/routes.rb": [
         1,
         1,
@@ -861,6 +870,7 @@
         null,
         null,
         1,
+        null,
         1,
         null,
         null,
@@ -868,6 +878,8 @@
       ],
       "/mnt/c/projects/networktools/app/controllers/application_controller.rb": [
         1,
+        null,
+        null,
         null
       ],
       "/mnt/c/projects/networktools/app/helpers/application_helper.rb": [
@@ -969,6 +981,17 @@
         1,
         null,
         1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
         null,
         null,
         1,
@@ -987,6 +1010,41 @@
         1,
         null,
         1,
+        1,
+        null,
+        null
+      ],
+      "/mnt/c/projects/networktools/spec/feature/server/new_server_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
         1,
         null,
         null
@@ -1052,6 +1110,6 @@
         null
       ]
     },
-    "timestamp": 1573411313
+    "timestamp": 1573423127
   }
 }

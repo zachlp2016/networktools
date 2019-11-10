@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   root 'welcome#index'
-  resource :servers, only: [:new, :post]
+
+  resources :servers, only: [:index, :show, :new, :post]
 
 
 end

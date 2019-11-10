@@ -13,6 +13,43 @@
  */
 
  // Custom bootstrap variables must be set or imported *before* bootstrap.
+
+
+ h1 {
+   margin-left: 1rem;
+   margin-top: 1rem;
+   font-size: 2rem;
+   color: 	#585858;
+   font-family: 'Muli', sans-serif;
+   text-decoration: none;
+ }
+
+ h2 {
+   margin-left: 1rem;
+   margin-top: 1rem;
+   font-size: 1.65rem;
+   color: 	#585858;
+   font-family: 'Muli', sans-serif;
+   text-decoration: none;
+ }
+
+ h3 {
+   margin-left: 1rem;
+   margin-top: 1rem;
+   font-size: 1.35rem;
+   color: 	#585858;
+   font-family: 'Muli', sans-serif;
+   text-decoration: none;
+ }
+
+ p   {
+   font-size: 1.25rem;
+   color: 	#585858;
+   font-family: 'Muli', sans-serif;
+   text-decoration: none;
+   line-height: 1.4;
+ }
+
  .jumbotron {
    font-family: 'Montserrat', sans-serif;
    text-align: center;
@@ -37,4 +74,20 @@
    margin: 20px;
    margin-left: auto;
    margin-right: auto;
+ }
+
+
+ a:visited {
+   text-decoration: underline;
+   color:  #505050;
+ }
+
+ a:hover {
+   text-decoration: none;
+   color: #1a1a1a;
+ }
+
+ a:active {
+   text-decoration: none;
+   color: #336600;
  }

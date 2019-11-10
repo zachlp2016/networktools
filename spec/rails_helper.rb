@@ -2,6 +2,8 @@
 require 'simplecov'
 SimpleCov.start
 
+require 'support/factory_bot'
+
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 
@@ -36,6 +38,8 @@ rescue ActiveRecord::PendingMigrationError => e
   exit 1
 end
 RSpec.configure do |config|
+  config.infer_spec_type_from_file_location!
+  config.include Devise::Test::IntegrationHelpers, type: :request
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
