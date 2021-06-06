@@ -1,0 +1,22 @@
+<div class="form_box">
+  <%= form_for @server do |f| %>
+    <p>
+      <%= f.label :server_name %><br>
+      <%= f.text_field :server_name %>
+    </p>
+
+    <p>
+      <%= f.label :ip_address %><br>
+      <%= f.text_field :ip_address %>
+    </p>
+
+    <p>
+      <%= f.label :operating_system %><br>
+      <%= f.text_field :operating_system %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
+</div>

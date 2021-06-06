@@ -1,0 +1,93 @@
+ /*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+ // Custom bootstrap variables must be set or imported *before* bootstrap.
+
+
+ h1 {
+   margin-left: 1rem;
+   margin-top: 1rem;
+   font-size: 2rem;
+   color: 	#585858;
+   font-family: 'Muli', sans-serif;
+   text-decoration: none;
+ }
+
+ h2 {
+   margin-left: 1rem;
+   margin-top: 1rem;
+   font-size: 1.65rem;
+   color: 	#585858;
+   font-family: 'Muli', sans-serif;
+   text-decoration: none;
+ }
+
+ h3 {
+   margin-left: 1rem;
+   margin-top: 1rem;
+   font-size: 1.35rem;
+   color: 	#585858;
+   font-family: 'Muli', sans-serif;
+   text-decoration: none;
+ }
+
+ p   {
+   font-size: 1.25rem;
+   color: 	#585858;
+   font-family: 'Muli', sans-serif;
+   text-decoration: none;
+   line-height: 1.4;
+ }
+
+ .jumbotron {
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+ }
+
+ .btn-outline-primary {
+   margin-left: 800px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
+
+ .btn-outline-success {
+   margin-left: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
+
+ .form_box {
+   text-align: center;
+   width: 300px;
+   border: 2px;
+   margin: 20px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+
+ a:visited {
+   text-decoration: underline;
+   color:  #505050;
+ }
+
+ a:hover {
+   text-decoration: none;
+   color: #1a1a1a;
+ }
+
+ a:active {
+   text-decoration: none;
+   color: #336600;
+ }

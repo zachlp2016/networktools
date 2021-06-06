@@ -1,0 +1,12 @@
+<% if @servers.empty? == true %>
+<div class="jumbotron">
+  <h1>Create Your First Server <%= link_to "here", new_server_path %></h1>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+<% else %>
+  <% @servers.each do |server| %>
+    <p>Server Name: <%= server.server_name %></p>
+    <p>Server IP Address: <%= server.ip_address%></p>
+    <p>Server Operating System: <%= server.operating_system %></p>
+  <% end %>
+<% end %>
